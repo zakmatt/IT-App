@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pl_200204.wroc.pwr.student.itapps_project.WelcomeActivitie"
+    tools:showIn="@layout/welcome_layout"
+    android:layout_gravity="center">
+    <ScrollView>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/welcome_img"
+                android:src="@drawable/welcomelogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:paddingBottom="10dp"
+                android:clickable="true"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:paddingBottom="4dp">
+            <TextView
+                android:id="@+id/welcome_text"
+                android:text="What would you like to do?"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STANDARD MENU"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/standard_menu"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREATE YOUR PIZZA"
+                android:id="@+id/create_pizza"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </TableRow>
+        </TableLayout>
+    </ScrollView>
+</TableLayout>

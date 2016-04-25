@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top">
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@color/pumpkin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/create_pizza1"
+                    android:textStyle="bold|italic"
+                    android:text="@string/create_pizza_string"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textAlignment="center" />
+            </TableRow>
+
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@color/carrot">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/create_standard_label"
+                    android:textStyle="bold|italic"
+                    android:text="@string/create_STANDARD"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textAlignment="center" />
+            </TableRow>
+
+                    <TableRow android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp">
+
+                        <CheckBox android:id="@+id/mozarellaCheckBox"
+                            android:text="@string/create_mozarella"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <CheckBox android:id="@+id/sauceCheckBox"
+                            android:text="@string/create_sauce"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                    </TableRow>
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@color/carrot">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/create_meat_label"
+                    android:textStyle="bold|italic"
+                    android:text="@string/create_MEAT"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textAlignment="center" />
+            </TableRow>
+
+                    <TableRow android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp">
+
+                        <CheckBox android:id="@+id/salamiCheckBox"
+                            android:text="@string/create_salami"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <CheckBox android:id="@+id/hamCheckBox"
+                            android:text="@string/create_ham"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@color/carrot">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/create_vegetable_label"
+                    android:textStyle="bold|italic"
+                    android:text="@string/create_VEGETABLES"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textAlignment="center" />
+            </TableRow>
+
+                    <TableRow android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp">
+
+                        <CheckBox android:id="@+id/mushroomsCheckBox"
+                            android:text="@string/create_mushrooms"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <CheckBox android:id="@+id/tomatoesCheckBox"
+                            android:text="@string/create_tomatoes"
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+                    </TableRow>
+
+</TableLayout>

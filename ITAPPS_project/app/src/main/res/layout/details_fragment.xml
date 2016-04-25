@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <TableRow>
+                     <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pizzaimg"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+                 </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/textName"
+                        android:textStyle="bold|italic"
+                        android:padding="4dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textAlignment="center"/>
+                </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/textDesc"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+        </TableRow>
+
+    <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/textPrice"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"/>
+    </TableRow>
+
+                <TableRow
+                android:layout_gravity="center">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ORDER MEAL"
+                        android:id="@+id/addToCartButt"
+                        />
+
+                </TableRow>
+        </TableLayout>
+    </ScrollView>
+</TableLayout>

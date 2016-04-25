@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ITAPPS_project</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="create_pizza_string">Create your pizza!</string>
+
+    <string name="create_STANDARD">Standard</string>
+    <string name="create_VEGETABLES">Vegetables</string>
+    <string name="create_MEAT">Meat</string>
+
+    <string name="create_mozarella">Mozarella</string>
+    <string name="create_sauce">Tomato sauce</string>
+    <string name="create_ham">Ham</string>
+    <string name="create_mushrooms">Mushrooms</string>
+    <string name="create_salami">Salami</string>
+    <string name="create_tomatoes">Tomatoes</string>
+
+
+</resources>
