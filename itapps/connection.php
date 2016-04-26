@@ -5,7 +5,6 @@
  */
 class DB_CONNECT {
  
-
     /**
      * db
      *
@@ -54,8 +53,6 @@ class DB_CONNECT {
         }
         return 0;
     }
-
-
     /**
      * register_changes
      *
@@ -67,8 +64,6 @@ class DB_CONNECT {
     function register_changes(){
         $this->db->query('UPDATE clientorders1 SET counting = counting + 1 WHERE pid=1');
     }
-
-
     /**
      * get_news
      *
@@ -78,16 +73,16 @@ class DB_CONNECT {
      */
     function get_news(){
         if($result = $this->db->query('SELECT * FROM clientorders1 WHERE pid<>1 ORDER BY created_at DESC LIMIT 50')){
+
             $return = '';
             while($r = $result->fetch_object()){
-                $return .= '<p>id: '.$r->id.' | '.htmlspecialchars($r->title).'</p>';
+                $return .= '<p>id: '.$r->pid.' | '.htmlspecialchars($r->name).'</p>';
                 $return .= '<hr/>';
             }
             return $return;
+           
         }
     }
-
-
  
     /**
      * Function to close db connection
