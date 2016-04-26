@@ -45,7 +45,10 @@
           &copy; Wiktor Bednarek 
      <br> &copy; Robert Bodziony 
      <br> &copy; Łukasz Kula
-     <br> &copy; Marta Kwolik</p>
+     <br> &copy; Marta Kwolik
+     <br> &copy; Matthew Żak
+     </p>
+     
      
    </div>
   </footer>

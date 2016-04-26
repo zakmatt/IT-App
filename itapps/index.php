@@ -7,11 +7,12 @@ $sec = "2";
 <html>
     <head>
     <meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+   <link href="styles.css" media="all" rel="Stylesheet" type="text/css" /> 
     </head>
-    <body>
+   
 
-
-
+<!--
 <head>
     <title><?php echo "All products";?></title>
     <meta charset="utf-8">
@@ -40,6 +41,7 @@ $sec = "2";
     </script>
 </head>
 <body>
+-->
 
 <?php
 
@@ -102,7 +104,25 @@ foreach($response["products"] as $key => $value)
     
 ?>
     
-    <div class = 'equipmentStyle'>
+
+
+    <div class="equipmentStyle">
+        <header class="container">
+        <div class="row">
+    
+    
+    <nav class="col-sm-2 text-right">
+      
+      <a class="btn btn-primary" href="mainsite.php" role="button">StartPage</a>
+      <a class="btn btn-primary" href="index.php" role="button">Recived Orders</a>
+      
+      
+    </nav>
+    <br></br>
+    
+  </div>
+<br></br>
+    
     <?php echo display();?>
     </div>
 
