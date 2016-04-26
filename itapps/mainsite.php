@@ -17,6 +17,7 @@
       
       <a class="btn btn-primary" href="mainsite.php" role="button">StartPage</a>
       <a class="btn btn-primary" href="index.php" role="button">Recived Orders</a>
+      <a class="btn btn-primary" href="contact.html" role="button">Contact</a>
       
       
     </nav>
