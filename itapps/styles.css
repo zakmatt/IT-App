@@ -20,7 +20,7 @@ header h1 {
 
 header nav {
   display: flex;
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
 }
 
 header p {
@@ -129,6 +129,13 @@ p {
 	font-size: 24px;
 }
 
+#listitems {
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	 text-align: center;
+}
+
 .searchListItem{
 	
 	  /* Fallback for web browsers that don't support RGBa */
@@ -164,6 +171,7 @@ p {
 	border-radius: 3px;
 	text-decoration: none;
 	margin-bottom: 10px;
+	padding-bottom: 400px;
 	
 }
 
@@ -186,3 +194,59 @@ background: linear-gradient(to left, #C04848 , #480048)
 	
 }
 
+#ordersFieldset {
+	  /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(149, 165, 166);
+    /* RGBa with 0.6 opacity rgb(52, 152, 219)*/
+    background-color: rgba(149, 165, 166, 0.2);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	display: block;
+	padding-top: 20px;
+	border-radius: 10px;
+	text-shadow: #000000 1px 1px 1px;
+	font-family: 'Oswald',Verdana, Arial, Helvetica, sans-serif;
+}
+
+#legend {
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	text-shadow: #000000 1px 1px 1px;
+	font-size: 25px;
+	background-color: rgba(149, 165, 166, 0.2);
+	border: 1px solid #bdc3c7;
+	border-radius: 3px;
+	padding: 3px 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Oswald',Verdana, Arial, Helvetica, sans-serif;
+}
+
+#statFieldset {
+	  /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(149, 165, 166);
+    /* RGBa with 0.6 opacity rgb(52, 152, 219)*/
+    background-color: rgba(149, 165, 166, 0.3);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	display: inline;
+	border: 1px solid #bdc3c7;
+	padding: 20px;
+	border-radius: 10px;
+	text-shadow: #000000 1px 1px 1px;
+	font-family: 'Oswald',Verdana, Arial, Helvetica, sans-serif;
+}
+
+#incomestat {
+	
+	color: white;
+	text-shadow: #000000 1px 1px 1px;
+	font-size: 25px;
+	border-radius: 3px;
+	font-family: 'Oswald',Verdana, Arial, Helvetica, sans-serif;
+}

@@ -54,7 +54,7 @@ require_once __DIR__ . '/connection.php';
 $db = new DB_CONNECT();
  
 // get all products from products table
-$result = mysql_query("SELECT * FROM orders_tab") or die(mysql_error());
+$result = mysql_query("SELECT * FROM `orders_tab` WHERE date1 = CURDATE()") or die(mysql_error());
 
 // check for empty result
 if (mysql_num_rows($result) > 0) {
@@ -65,11 +65,7 @@ if (mysql_num_rows($result) > 0) {
     while ($row = mysql_fetch_array($result)) {
         // temp user array
         $product = array();
-        $product["ID"] = $row["pid"];
-        $product["NAME"] = $row["name"];
-		$product["DESC"] = $row["description"];
         $product["PRICE"] = $row["price"];
-        $product["CREATED_AT"] = $row["created_at"];
  
         // push single product into final response array
         array_push($response["products"], $product);
@@ -88,31 +84,33 @@ if (mysql_num_rows($result) > 0) {
     echo json_encode($response);
     $db->get_news();
 }
+
+$counter = 0;
 ?> 
 <h:form>
-			<div id="legend">Orders</div>
-			<fieldset id="ordersFieldset">
+			<div id="legend">Statistics</div>
+			<fieldset id="statFieldset">
 				
 			
 					<div id="searchresbar" align="center">
 						<?php
 							foreach($response["products"] as $key => $value)
 									{?>
-										<p id="listitems">
+										
 									<?php
 									foreach($value as $x => $x_val)
 									{
-									echo $x." : ". $x_val." |  ";
+										$counter = $counter + $x_val;
 									}?>
-									</p>
+									<div id="incomestat">
 									
 									<?php
-									echo "<hr>";
-									}
+									
+									}echo "Your income for today : <hr>".$counter." PLN";
 								}
 
 								
-							?>
+							?></div>
 					</div>
 				
 			</fieldset>

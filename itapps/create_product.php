@@ -21,7 +21,7 @@ if (isset($_POST['name']) && isset($_POST['price']) && isset($_POST['description
     $db = new DB_CONNECT();
  
     // mysql inserting a new row
-    $result = mysql_query("INSERT INTO clientorders1(name, price, description) VALUES('$name', '$price', '$description')");
+    $result = mysql_query("INSERT INTO orders_tab(name, price, description, date1) VALUES('$name', '$price', '$description', CURRENT_DATE)");
  
     if ($result) {
         // successfully inserted into database
