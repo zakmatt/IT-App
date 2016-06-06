@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head><title>RESTAURANT</title>
+<head><title>Contact</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
    <link href="styles.css" media="all" rel="Stylesheet" type="text/css" /> 
@@ -18,16 +18,51 @@
       </nav>
     </div>
   </header>
-  <section class="jumbotron">
+	<section class="jumbotron">
     <div class="container">
-      <div class="row text-center">
-        <h2> Innovative Restaurant</h2>
-        <h3> Check us </h3>
-        <a class="btn btn-primary" href="index.php" role="button">Check orders</a>
-      </div>
-    </div>    
+  		<div class="col-md-3"></div>
+  		<div class="col-md-3">
+  			<h1 id="contact">Contact us!</h1>
+  			<h2>ul. wybrzeże Stanisława Wyspiańskiego 27</h2>
+  			<h2>50-370 Wrocław</h2>
+  			<h3>Phone number: 724 568 878</h3>
+  		</div>
+      	<div id="map-container" class="col-md-3"></div>
+    </div>
   </section>
- <footer class="container">
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script>	
+ 
+      function init_map() {
+		var var_location = new google.maps.LatLng(51.108693,17.060010);
+ 
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 14
+        };
+ 
+		var var_marker = new google.maps.Marker({
+			position: var_location,
+			map: var_map,
+			title:"Venice"});
+ 
+        var var_map = new google.maps.Map(document.getElementById("map-container"),
+            var_mapoptions);
+ 
+		var_marker.setMap(var_map);	
+ 
+      }
+ 
+      google.maps.event.addDomListener(window, 'load', init_map);
+ 
+    </script>
+  <footer class="container">
     <div class="row">
       <p id="foot" font-size="12px" class="col-sm-6">
         &copy; Wiktor Bednarek 
@@ -42,4 +77,5 @@
       </p>
     </div>
   </footer>
-</body></html>
+</body>
+</html>

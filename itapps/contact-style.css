@@ -5,7 +5,7 @@ header {
 header .row,
 footer .row {
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 header h1 {
@@ -45,8 +45,8 @@ header p {
 /*======================================Body================*/
 .jumbotron
 {
-	height: 500px;
-	background-image: url('http://www.nandos.com/sites/all/themes/nandos/images/restaurants/restaurant-carousel-1.jpg');
+	height: 800px;
+  background-image: url('https://media2.popsugar-assets.com/files/2016/02/08/898/n/1922398/4c2124bfd07afeca_heart-shaped-pizza-2016.xxxlarge_2x.jpg');
 	color: white;
   text-shadow: #000000 2px 2px 2px;
 }

@@ -42,7 +42,7 @@ $sec = "2";
 </head>
 <body>
 -->
-
+<body>
 <?php
 
  function display() {
@@ -87,11 +87,9 @@ if (mysql_num_rows($result) > 0) {
 
 $counter = 0;
 ?> 
-<h:form>
+    <h:form>
 			<div id="legend">Statistics</div>
-			<fieldset id="statFieldset">
-				
-			
+			     <fieldset id="statFieldset">
 					<div id="searchresbar" align="center">
 						<?php
 							foreach($response["products"] as $key => $value)
@@ -107,41 +105,48 @@ $counter = 0;
 									<?php
 									
 									}echo "Your income for today : <hr>".$counter." PLN";
-								}
+								    }
 
-								
-							?></div>
+							         ?>
+                                    </div>
 					</div>
-				
-			</fieldset>
-			</h:form>
-
-    
+			     </fieldset>
+             </div>
+	</h:form>
 
 
-    <div class="equipmentStyle">
-        <header class="container">
-        <div class="row">
+    <header class="container">
+      <div class="row">
+        <nav class="col-sm-11 text-right">
+          <a class="btn btn-primary" href="mainsite.php" role="button">StartPage</a>
+          <a class="btn btn-primary" href="index.php" role="button">Recived Orders</a>
+          <a class="btn btn-primary" href="statistics.php" role="button">Statistics</a>
+          <a class="btn btn-primary" href="contact.php" role="button">Contact</a>
+        </nav>
+      </div>
+      </header>
     
-    
-    <nav class="col-sm-2 text-right">
-      
-      <a class="btn btn-primary" href="mainsite.php" role="button">StartPage</a>
-      <a class="btn btn-primary" href="index.php" role="button">Recived Orders</a>
-      <a class="btn btn-primary" href="statistics.php" role="button">Statistics</a>
-      
-    </nav>
-    <br></br>
-    
-  </div>
-<br></br>
-    
+    <div class="jumbotron">
     <?php echo display();?>
     </div>
 
     <div id="message-list" data-counter="<?php echo (int)$db->check_changes();?>">
         <?php echo $db->get_news();?>
     </div>
-
+ <footer class="container">
+    <div class="row">
+      <p id="foot" font-size="12px" class="col-sm-6">
+        &copy; Wiktor Bednarek 
+        &copy; Robert Bodziony 
+        &copy; Lukasz Kula
+        &copy; Marta Kwolik
+      </p>
+      <p font-size="12px" class="col-sm-4"/>
+      <p font-size="12px" class="col-sm-2">
+        <a href="http://www.facebook.pl"><img src="http://www.marketingdirecto.com/wp-content/uploads/2013/01/facebook-logo2.jpg"/></a>
+        <a href="http://www.twitter.com"><img src="https://lh3.ggpht.com/nn0_2f2yehKR7fnMIZ0XrSWbC5Q0VPP7vNmLMV7ndNFinClynZRO4RBTGfbjVOs1fyA=w300"/></a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

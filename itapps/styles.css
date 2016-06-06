@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-weight: 300;
 }
 
@@ -11,6 +11,7 @@ header .row,
 footer .row {
   display: flex;
   align-items: center;
+  height: 10px;
 }
 
 header h1 {
@@ -30,14 +31,14 @@ header p {
 
 .jumbotron {
   display: flex;
-  align-items: center;
-  background-image: url('http://www.nandos.com/sites/all/themes/nandos/images/restaurants/restaurant-carousel-1.jpg');
+  align-item: center;
+  background-image: url('https://media2.popsugar-assets.com/files/2016/02/08/898/n/1922398/4c2124bfd07afeca_heart-shaped-pizza-2016.xxxlarge_2x.jpg');
   background-size: cover;
-  color: #ffffff;
-  height: 500px;
+  font-color: black;
+
+  height: 800px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
-
 
 
 #Store
@@ -67,12 +68,12 @@ header p {
   font-size: 60px;
   font-weight: 700;
   margin: 0;
-  color: #fff;
+  color: #f;
 }
 
 .jumbotron h3 {
   margin: 0 0 20px;
-  color: #fff;
+  color: #f;
 }
 
 section .row img {
@@ -141,12 +142,8 @@ p {
 	  /* Fallback for web browsers that don't support RGBa */
     background-color: rgb(149, 165, 166);
     /* RGBa with 0.6 opacity rgb(52, 152, 219)*/
-    background-color: rgba(149, 165, 166, 0.2);
- 
- 	
+    background-color: rgba(149, 165, 166, 0.2);	
 }
-
-
 
 .Searcher {
 	display: inline;
@@ -163,16 +160,17 @@ p {
 	display:block;
 	
 	background: #24C6DC; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #24C6DC , #514A9D); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #24C6DC , #514A9D);
-	
+	/*background: -webkit-linear-gradient(to left, #24C6DC , #514A9D); /* Chrome 10-25, Safari 5.1-6 */
+	/*background: linear-gradient(to left, #24C6DC , #514A9D);
+	*/
+	 background-image: url('https://media2.popsugar-assets.com/files/2016/02/08/898/n/1922398/4c2124bfd07afeca_heart-shaped-pizza-2016.xxxlarge_2x.jpg');
 	/*background-color: rgb(218,190,206); 
 	background-color: #ffffff;*/
 	border-radius: 3px;
 	text-decoration: none;
 	margin-bottom: 10px;
 	padding-bottom: 400px;
-	
+	height: 800px;
 }
 
 /*
@@ -249,4 +247,32 @@ background: linear-gradient(to left, #C04848 , #480048)
 	font-size: 25px;
 	border-radius: 3px;
 	font-family: 'Oswald',Verdana, Arial, Helvetica, sans-serif;
+}
+#navStat{
+	background-color: white;
+}
+
+#map-container
+{
+    height: 300px;     
+	border: 3px solid #000000;
+}
+#contact
+{
+	/*background-color: #F00000;*/
+	font-family: Arial;
+
+}
+/*==================================footer==================*/
+img
+{	height: 50px;
+	width: 50px;	
+}
+section div h1
+{
+	font-size: 50px;
+}
+#footBrand
+{
+	align-item: right;
 }
