@@ -20,14 +20,17 @@
   </header>
 	<section class="jumbotron">
     <div class="container">
-  		<div class="col-md-3"></div>
-  		<div class="col-md-3">
-  			<h1 id="contact">Contact us!</h1>
-  			<h2>ul. wybrzeże Stanisława Wyspiańskiego 27</h2>
-  			<h2>50-370 Wrocław</h2>
-  			<h3>Phone number: 724 568 878</h3>
-  		</div>
+      <div class="row"/>
+      <div class="row">
+    		<div class="col-md-2"></div>
+    		<div class="col-md-5">
+    			<h1 id="contact">Contact us!</h1>
+    			<h2>ul. wybrzeze Stanislawa Wyspianskiego 27</h2>
+    			<h2>50-370 Wroclaw</h2>
+    			<h3>Phone number: 724 568 878</h3>
+    		</div>
       	<div id="map-container" class="col-md-3"></div>
+      </div>
     </div>
   </section>
 
